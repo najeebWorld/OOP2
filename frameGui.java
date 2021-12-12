@@ -214,11 +214,21 @@ public class frameGui extends JFrame implements ActionListener {
                }
            }
            List<NodeData> l2=a1.tsp(l);
-           String str="the path that contains the list of vertexes is: "+l2.get(0).getKey();
-           for (int i=1;i<l2.size();i++){
-               str=str+"->"+l2.get(i).getKey();
+           if(l2.size()>0) {
+               String str = "the path that contains the list of vertexes is: " + l2.get(0).getKey();
+               for (int i = 1; i < l2.size(); i++) {
+                   str = str + "->" + l2.get(i).getKey();
+               }
+               JOptionPane.showMessageDialog(null, str);
            }
-           JOptionPane.showMessageDialog(null, str);
+           else{
+              String  str="there is no path that contains the vertexes  [";
+              for(int i=0;i<l.size()-1;i++){
+                 str=str+l.get(i).getKey() +",";
+              }
+              str=str+l.get(l.size()-1).getKey()+"] in this graph ";
+               JOptionPane.showMessageDialog(null, str);
+           }
 
         }
 
