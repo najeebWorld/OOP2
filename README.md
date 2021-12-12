@@ -103,7 +103,7 @@ we will elaborate more about most of these function later
 <br>this class gets a String for the json file and runs the function in Ex2 that creates the GUI.
 <br>
 <br>
-__________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________
 
 ## elaborating the functions from algo
 <b>init:</b> 
@@ -214,13 +214,13 @@ _______________________________________________________________________
 ### running time of the functions
 <br>
 
-|   	          |init|getGraph|copy|isConnected|shortestPathDist|shortestpath|center|tsp (group of 5)|tsp (group of 20)|load|save|  
-|---------------|------|--------|---------|--------------|-----------------|--------------|-------------|-----------------|----------------|--------------|-------------|
-|10 Nodes       |      |        |         |              |                 |              |             |                 |                |              |             |      
-| 100 Nodes     |      |        |         |              |                 |              |             |                 | 199 ms         |              |             |
-| 1000 Nodes    |		   |        |	        |   235 ms     | 299 ms 	       |245 ms        |6 sec 542 ms |     554 ms      | 756 ms         |345 ms        |342 ms       |
-| 10000 Nodes	  |      |        |         |1 sec 942 ms  |  1 sec 299 ms   | 1sec 52 ms   |49 min 29 sec| 3 sec 619 ms    | 8 sec 215 ms   |1 sec 567 ms  |1 sec 804 ms |
-| 100000 Nodes	|		   |        |         |	4 min 40 sec |   55 sec 589 ms | 55 sec 589 ms|   ----      | 4 min 27 sec    | -----          |21 sec 434 ms |23 sec 907 ms|
+|   	          |isConnected |shortestPathDist |shortestpath  |center       |tsp (group of 5) |tsp (group of 20)|load         |         save|  
+|---------------|------------|-----------------|--------------|-------------|-----------------|----------------|--------------|-------------|
+| 10 Nodes      |  35 ms     |    37 ms        |    35 ms     |   34 ms     |  40 ms          |    ---         | 53 ms        |   63 ms     |      
+| 100 Nodes     |  47 ms     |    47 ms        |   53 ms      |    56 ms    |      61 ms      | 199 ms         |   53 ms      |    63 ms    |
+| 1000 Nodes    |   235 ms   | 299 ms 	       |245 ms        |6 sec 542 ms |     554 ms      | 756 ms         |345 ms        |342 ms       |
+| 10000 Nodes	  |1 sec 942 ms|  1 sec 299 ms   | 1sec 52 ms   |49 min 29 sec| 3 sec 619 ms    | 8 sec 215 ms   |1 sec 567 ms  |1 sec 804 ms |
+| 100000 Nodes	|4 min 40 sec|   55 sec 589 ms | 55 sec 589 ms|   ----      | 4 min 27 sec    | -----          |21 sec 434 ms |23 sec 907 ms|
 
 
 
