@@ -214,11 +214,13 @@ _______________________________________________________________________
 ### running time of the functions
 <br>
 
-|   	          |isConnected|tsp		| center   | shortestPathDist |	shortestpath|
-|---------------|-----------|--------|---------|------------------|-----------------|
-| 1000 Nodes    |		        |         |	        |	                  |  	                 |
-| 10000 Nodes	  |		    |      |      |	      |	      |
-| 100000 Nodes	|		    |      |      |	      |	      |
+|   	          |init|getGraph|copy|isConnected|shortestPathDist|shortestpath|center|tsp (group of 5)|tsp (group of 20)|load|save|  
+|---------------|------|--------|---------|--------------|-----------------|--------------|-------------|-----------------|----------------|--------------|-------------|
+|10 Nodes       |      |        |         |              |                 |              |             |                 |                |              |             |      
+| 100 Nodes     |      |        |         |              |                 |              |             |                 | 199 ms         |              |             |
+| 1000 Nodes    |		   |        |	        |   235 ms     | 299 ms 	       |245 ms        |6 sec 542 ms |     554 ms      | 756 ms         |345 ms        |342 ms       |
+| 10000 Nodes	  |      |        |         |1 sec 942 ms  |  1 sec 299 ms   | 1sec 52 ms   |49 min 29 sec| 3 sec 619 ms    | 8 sec 215 ms   |1 sec 567 ms  |1 sec 804 ms |
+| 100000 Nodes	|		   |        |         |	4 min 40 sec |   55 sec 589 ms | 55 sec 589 ms|   ----      | 4 min 27 sec    | -----          |21 sec 434 ms |23 sec 907 ms|
 
 
 
